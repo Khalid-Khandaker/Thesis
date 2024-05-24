@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "977105077153",
+    "project_id": "apple-52a7c",
+    "storage_bucket": "apple-52a7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977105077153:android:a6c9eaa4a0fb7fa0a481e0",
+        "android_client_info": {
+          "package_name": "com.example.apple"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpfhDMSC0_0TLQIkL6nyIWRVk0fkI1TP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

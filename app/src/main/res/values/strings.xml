@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Apple</string>
+
+    <!--Dashboard-->
+    <string name="dashboard_string_module_0">Module 0</string>
+    <string name="dashboard_string_description_module_0">What is pinyin?</string>
+    <string name="dashboard_string_percent_complete">0% Complete</string>
+
+    <style name="dashboard_string_style_module_0">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black_olive</item>
+    </style>
+
+    <style name="dashboard_string_style_description_module_0">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dashboard_string_style_progress_complete">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--...-->
+
+    <!--Welcome Screen-->
+    <string name="main_string_tutor">Tutor</string>
+    <string name="main_string_i">i</string>
+    <string name="main_string_owl">owl</string>
+    <string name="main_string_get_started">Get Started</string>
+
+    <string name="main_string_Welcome">Welcome!</string>
+    <string name="main_string_welcome_message">Tutoriowl will help you to master Mandarin\npronunciation with interactive lessons and\npractice exercises.</string>
+
+    <style name="main_string_style_welcome">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/gainsboro</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="main_string_style_welcome_message">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/gainsboro</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+    </style>
+
+    <style name="main_string_style_tutor">
+        <item name="fontFamily">@font/poppins_black</item>
+        <item name="android:textColor">@color/lavender_indigo</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="main_string_style_i">
+        <item name="fontFamily">@font/poppins_black</item>
+        <item name="android:textColor">@color/cadmium_orange</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="main_string_style_owl">
+        <item name="fontFamily">@font/poppins_black</item>
+        <item name="android:textColor">@color/lavender_indigo</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="main_string_style_get_started">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--...-->
+
+    <!--LoginActivity-->
+    <string name="login_string_log">Log</string>
+    <string name="login_string_in">in</string>
+    <string name="login_string_description">Logging in to your account</string>
+    <string name="login_string_hint_username">Username</string>
+    <string name="login_string_hint_password">Password</string>
+    <string name="login_string_enter">Enter</string>
+
+    <style name="login_string_style_log">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="login_string_style_in">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="login_string_style_description">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="login_string_style_enter">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
