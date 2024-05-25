@@ -38,7 +38,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,23 +47,17 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dashboard);
-        //button = (Button) findViewById(R.id.dashboard_button_logout);
+
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.black));
         window.setNavigationBarColor(ContextCompat.getColor(this, R.color.black));
 
-        //Hooks
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.dashboard_tool_bar_top);
 
-
-        //Toolbar
         setSupportActionBar(toolbar);
-
-
-        //Actionbar
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -72,22 +65,26 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         //Change the default action bar icon kasi hindi mapalitan ung color
         setActionBarIcon();
 
+        //If items are clicked
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.bringToFront();
-    }
-
-    @Override
-    public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
       void setActionBarIcon() {
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.drawer_icon));
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            finishAffinity();
+            finish();
+        }
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -101,8 +98,10 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         } else if(menuitemId == R.id.settings) {
             Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
         } else if(menuitemId == R.id.logout) {
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+            //Lagyan alert dito kung sure na sya mag log out
             FirebaseAuth.getInstance().signOut();
-            
+            finish();
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

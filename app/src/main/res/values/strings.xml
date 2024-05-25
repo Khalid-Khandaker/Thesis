@@ -97,6 +97,7 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="login_string_style_enter">
         <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">@color/white</item>
@@ -114,4 +115,10 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">18sp</item>
     </style>
+
+    <!--Bottom navigation-->
+    <string name="bottom_navigation_string_dashboard">Dashboard</string>
+    <string name="bottom_navigation_string_performance">Performance</string>
+    <string name="bottom_navigation_string_leaderboard">Leaderboard</string>
+    <string name="bottom_navigation_string_practice">Practice</string>
 </resources>

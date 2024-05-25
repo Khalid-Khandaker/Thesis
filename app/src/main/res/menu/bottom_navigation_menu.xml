@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_navigation_icon_dashboard"
-        android:title="Dashboard"
-        android:icon="@drawable/dashboard_icon"/>
+        android:title="@string/bottom_navigation_string_dashboard"
+        android:icon="@drawable/custom_dashboard_icon"/>
     <item
         android:id="@+id/bottom_navigation_icon_performance"
-        android:title="Performance"
-        android:icon="@drawable/performance_icon"/>
+        android:title="@string/bottom_navigation_string_performance"
+        android:icon="@drawable/custom_performance_icon"/>
     <item
         android:id="@+id/bottom_navigation_icon_leader_board"
-        android:title="Leaderboard"
-        android:icon="@drawable/leaderboard_icon"/>
+        android:title="@string/bottom_navigation_string_leaderboard"
+        android:icon="@drawable/custom_leaderboard_icon"/>
     <item
         android:id="@+id/bottom_navigation_icon_practice"
-        android:title="Practice"
-        android:icon="@drawable/practice_icon"/>
+        android:title="@string/bottom_navigation_string_practice"
+        android:icon="@drawable/custom_practice_icon"/>
 </menu>
