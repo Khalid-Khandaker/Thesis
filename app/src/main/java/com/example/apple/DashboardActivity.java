@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
@@ -32,6 +33,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     //Instantiate
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -70,9 +72,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         //Change the default action bar icon kasi hindi mapalitan ung color
         setActionBarIcon();
 
-
         navigationView.setNavigationItemSelectedListener(this);
-
         navigationView.bringToFront();
     }
 
@@ -90,8 +90,34 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.drawer_icon));
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        int menuitemId = menuItem.getItemId();
+
+        if(menuitemId == R.id.profile) {
+            Toast.makeText(this, "My Profile", Toast.LENGTH_SHORT).show();
+
+        } else if(menuitemId == R.id.settings) {
+            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+        } else if(menuitemId == R.id.logout) {
+            FirebaseAuth.getInstance().signOut();
+            
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
