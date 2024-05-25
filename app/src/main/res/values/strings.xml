@@ -103,7 +103,15 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <!--Toolbar-->
+    <!--Actionbar/Toolbar-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dashboard_string_greet">Goodmorning \nKhalid!</string>
+
+    <style name="dashboard_string_style_greet">
+        <item name="android:text">@string/dashboard_string_greet</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>

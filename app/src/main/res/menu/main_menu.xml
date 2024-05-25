@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:title="Home"
-            android:icon="@drawable/padlock_icon"/>
-        <item
-            android:id="@+id/nav_cycle"
-            android:title="Cycling"
-            android:icon="@drawable/padlock_icon"/>
-        <item
-            android:id="@+id/nav_bus"
-            android:title="Bus"
-            android:icon="@drawable/padlock_icon"/>
-        <item
-            android:id="@+id/nav_plane"
-            android:title="Plane"
-            android:icon="@drawable/padlock_icon"/>
-    </group>
-
+    <item
+        android:title="Personal">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_profile"
+                android:title="My Profile"
+                android:icon="@drawable/user_icon"/>
+            </group>
+        </menu>
+    </item>
 
         <item
-            android:title="Profile">
+            android:title="System">
             <menu>
                 <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/login"
-                    android:title="Login"
-                    android:icon="@drawable/padlock_icon"/>
-                <item
-                    android:id="@+id/profile"
-                    android:title="Profile"
-                    android:icon="@drawable/padlock_icon"/>
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/gear_icon"/>
                 <item
                     android:id="@+id/logout"
                     android:title="Logout"
-                    android:icon="@drawable/padlock_icon"/>
+                    android:icon="@drawable/logout_icon"/>
                 </group>
             </menu>
         </item>
