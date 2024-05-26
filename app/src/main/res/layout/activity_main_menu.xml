@@ -14,9 +14,12 @@
     <FrameLayout
         android:id="@+id/main_menu_frame_layout"
 
+        android:name="com."
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+    </FrameLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_menu_bottom_navigation"
 

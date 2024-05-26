@@ -13,6 +13,9 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.core.splashscreen.SplashScreen;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
     CardView cardView;
     @Override
@@ -22,13 +25,19 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-
         setContentView(R.layout.activity_main);
-        startActivity(new Intent(MainActivity.this, MainMenuActivity.class));
+
+
+        //startActivity(new Intent(MainActivity.this, MainMenuActivity.class));
+
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.eigengrau));
         window.setNavigationBarColor(ContextCompat.getColor(this, R.color.black));
+
+        if(FirebaseAuth.getInstance().getCurrentUser()!= null) {
+            startActivity(new Intent(MainActivity.this, DashboardActivity.class));
+        }
 
         cardView = (CardView) findViewById(R.id.main_card_view_get_started);
         cardView.setOnClickListener(new OnClickListener() {
