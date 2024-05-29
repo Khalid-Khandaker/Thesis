@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PracticeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/fragment_practice_string_practice"
+        style="@style/fragment_practice_string_style_practice"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp">
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_practice_card_view_pinyin_characters"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="12dp"
+        app:cardCornerRadius="15dp"
+
+        app:cardBackgroundColor="@color/metallic_violet"
+        android:outlineAmbientShadowColor="@color/metallic_violet"
+        android:outlineSpotShadowColor="@color/metallic_violet"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_pinyin_characters"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/fragment_practice_string_view_pinyin_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fragment_practice_string_pinyin_characters"
+            style="@style/fragment_practice_string_style_pinyin_characters"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/fragment_practice_string_view_pinyin_characters_description"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fragment_practice_string_pinyin_characters_description"
+            style="@style/fragment_practice_string_style_pinyin_characters_description"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_practice_string_view_pinyin_characters"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+        </TextView>
+            <ImageButton
+                android:src="@drawable/practice_enter_button"
+                android:background="@null"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_practice_string_view_pinyin_characters_description"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+            </ImageButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_practice_card_view_practice_pronunciation"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="12dp"
+        app:cardCornerRadius="15dp"
+
+        app:cardBackgroundColor="@color/metallic_violet"
+        android:outlineSpotShadowColor="@color/metallic_violet"
+        android:outlineAmbientShadowColor="@color/metallic_violet"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_practice_card_view_pinyin_characters"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_pinyin_characters"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:id="@+id/fragment_practice_string_view_pronunciation_practice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_practice_string_pronunciation_practice"
+                style="@style/fragment_practice_string_style_pronunciation_practice"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/fragment_practice_string_view_pronunciation_practice_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_practice_string_pronunciation_practice_description"
+                style="@style/fragment_practice_string_style_pronunciation_practice_description"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_practice_string_view_pronunciation_practice"
+
+                android:layout_marginStart="10dp">
+            </TextView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/practice_enter_button"
+                android:background="@null"
+
+                app:layout_constraintTop_toBottomOf="@id/fragment_practice_string_view_pronunciation_practice_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+            </ImageButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/black_olive"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="50dp">
+    </View>
+</androidx.constraintlayout.widget.ConstraintLayout>

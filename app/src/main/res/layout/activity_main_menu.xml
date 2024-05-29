@@ -13,24 +13,18 @@
 
     <FrameLayout
         android:id="@+id/main_menu_frame_layout"
-
-        android:name="com."
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
     </FrameLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_menu_bottom_navigation"
-
         app:menu="@menu/bottom_navigation_menu"
-
         style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         app:backgroundTint="@color/ghost_white"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:paddingBottom="10dp">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 </LinearLayout>

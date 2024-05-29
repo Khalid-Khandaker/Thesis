@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -55,7 +56,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.dashboard_tool_bar_top);
+        //toolbar = findViewById(R.id.dashboard_tool_bar_top);
 
         setSupportActionBar(toolbar);
 

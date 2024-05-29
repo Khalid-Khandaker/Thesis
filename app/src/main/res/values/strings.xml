@@ -121,4 +121,58 @@
     <string name="bottom_navigation_string_performance">Performance</string>
     <string name="bottom_navigation_string_leaderboard">Leaderboard</string>
     <string name="bottom_navigation_string_practice">Practice</string>
+    <string name="bottom_navigation_string_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Fragment Performance-->
+    <string name="fragment_practice_string_initials">Initials</string>
+    
+    <style name="fragment_practice_string_style_initials">
+        <item name="android:text">@string/fragment_practice_string_initials</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!--Fragment Practice-->
+    <string name="fragment_practice_string_practice">Practice</string>
+    <string name="fragment_practice_string_pinyin_characters">Pinyin\nCharacters</string>
+    <string name="fragment_practice_string_pinyin_characters_description">breaks down Chinese\ncharacters into their\nparts</string>
+    <string name="fragment_practice_string_pronunciation_practice">"Let's practice your\npronunciation"</string>
+    <string name ="fragment_practice_string_pronunciation_practice_description">Practice your pronunciation\nhere.</string>
+
+    <style name="fragment_practice_string_style_practice">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="fragment_practice_string_style_pinyin_characters">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="fragment_practice_string_style_pronunciation_practice">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="fragment_practice_string_style_pinyin_characters_description">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="fragment_practice_string_style_pronunciation_practice_description">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>
