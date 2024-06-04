@@ -226,4 +226,22 @@
     <string name="fragment_compound_string_ün">ün</string>
     <string name="fragment_compound_string_iang">iang</string>
     <string name="fragment_compound_string_eng">eng</string>
+
+    <string name="fragment_compound_string_swipe">&#60;&#32;&#32;&#32;&#32;swipe&#32;&#32;&#32;&#32;&#62;</string>
+    
+    <style name="fragment_compound_string_style_swipe">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:color">@color/soft_peach</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <string name="fragment_compound_string_compound_finals">Compound Finals</string>
+    <string name="fragment_initials_string_initials">Initials</string>
+    <string name="fragment_simple_string_simple_finals">Simple Finals</string>
+
+    <style name="fragment_compound_string_style_compound_finals">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

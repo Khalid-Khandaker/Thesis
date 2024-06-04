@@ -8,19 +8,6 @@
     tools:context=".PracticeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/fragment_practice_string_practice"
-        style="@style/fragment_practice_string_style_practice"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="10dp">
-    </TextView>
     <androidx.cardview.widget.CardView
         android:id="@+id/fragment_practice_card_view_pinyin_characters"
 
@@ -37,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="150dp"
         android:layout_marginStart="10dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,6 +68,7 @@
             android:layout_marginBottom="5dp">
         </TextView>
             <ImageButton
+                android:id="@+id/fragment_practice_pinyin_characters_enter_button"
                 android:src="@drawable/practice_enter_button"
                 android:background="@null"
 

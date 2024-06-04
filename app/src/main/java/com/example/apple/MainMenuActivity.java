@@ -62,6 +62,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 return true;
             }
         });
+        
         addFragment(new DashboardFragment());
     }
 

@@ -5,9 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CompoundFragment">
+    tools:context=".CompoundFragment"
+    android:background="@color/ghost_white">
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/fragment_compound_string_compound_finals"
+        style="@style/fragment_compound_string_style_compound_finals"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp">
+    </TextView>
     <androidx.cardview.widget.CardView
         android:id="@+id/fragment_compound_cardview_ai"
 
@@ -25,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fragment_compound_cardview_ei"
 
-        android:layout_marginTop="155dp">
+        android:layout_marginTop="150dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,7 +85,7 @@
         app:layout_constraintStart_toEndOf="@+id/fragment_compound_cardview_ai"
         app:layout_constraintEnd_toStartOf="@+id/fragment_compound_cardview_ou"
 
-        android:layout_marginTop="155dp">
+        android:layout_marginTop="150dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -117,7 +131,7 @@
         app:layout_constraintStart_toEndOf="@+id/fragment_compound_cardview_ei"
         app:layout_constraintEnd_toStartOf="@+id/fragment_compound_cardview_an"
 
-        android:layout_marginTop="155dp">
+        android:layout_marginTop="150dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -163,7 +177,7 @@
         app:layout_constraintStart_toEndOf="@+id/fragment_compound_cardview_ou"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:layout_marginTop="155dp">
+        android:layout_marginTop="150dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
