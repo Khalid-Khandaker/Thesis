@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InitialsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initials_cardview_b"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_p"
+
+        android:layout_marginTop="155dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_b"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_p"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initials_cardview_b"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_m"
+
+        android:layout_marginTop="155dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_p"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_m"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_p"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_f"
+
+        android:layout_marginTop="155dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_m"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_f"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_m"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="155dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_f"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_d"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_i"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_d"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_i"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_d"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_g"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_i"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_g"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_i"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_k"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_g"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_k"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_g"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_k"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_h"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_d"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_j"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_h"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_j"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_i"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_h"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_q"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_j"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_q"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_g"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_j"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_x"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_q"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_x"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_k"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_q"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_x"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_zh"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_h"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_ch"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_zh"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_ch"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_j"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_zh"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_sh"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_ch"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_sh"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_q"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_ch"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_r"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_sh"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_r"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_x"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_sh"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_r"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--@@@-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_z"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_zh"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_c"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_z"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_c"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_ch"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_z"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_s"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_c"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_s"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_sh"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_c"
+        app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_y"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_s"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_y"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_r"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_s"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_y"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_initial_cardview_t"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/lavender_indigo"
+        android:outlineAmbientShadowColor="@color/lavender_indigo"
+        android:outlineSpotShadowColor="@color/lavender_indigo"
+
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="25dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/card_layout_background_initial"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/fragment_initial_string_t"
+                style="@style/fragment_initial_string_style"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="2dp">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

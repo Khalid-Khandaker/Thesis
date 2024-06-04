@@ -127,7 +127,7 @@
 
     <!--Fragment Performance-->
     <string name="fragment_practice_string_initials">Initials</string>
-    
+
     <style name="fragment_practice_string_style_initials">
         <item name="android:text">@string/fragment_practice_string_initials</item>
         <item name="fontFamily">@font/poppins_bold</item>
@@ -141,7 +141,7 @@
     <string name="fragment_practice_string_pinyin_characters">Pinyin\nCharacters</string>
     <string name="fragment_practice_string_pinyin_characters_description">breaks down Chinese\ncharacters into their\nparts</string>
     <string name="fragment_practice_string_pronunciation_practice">"Let's practice your\npronunciation"</string>
-    <string name ="fragment_practice_string_pronunciation_practice_description">Practice your pronunciation\nhere.</string>
+    <string name="fragment_practice_string_pronunciation_practice_description">Practice your pronunciation\nhere.</string>
 
     <style name="fragment_practice_string_style_practice">
         <item name="fontFamily">@font/poppins_bold</item>
@@ -175,4 +175,55 @@
         <item name="android:textColor">@color/black_olive</item>
         <item name="android:textSize">12sp</item>
     </style>
+
+    <!--Fragment Initial-->
+    <string name="fragment_initial_string_b">b</string>
+    <string name="fragment_initial_string_p">p</string>
+    <string name="fragment_initial_string_m">m</string>
+    <string name="fragment_initial_string_f">f</string>
+    <string name="fragment_initial_string_d">d</string>
+    <string name="fragment_initial_string_i">i</string>
+    <string name="fragment_initial_string_g">g</string>
+    <string name="fragment_initial_string_k">k</string>
+    <string name="fragment_initial_string_h">h</string>
+    <string name="fragment_initial_string_j">j</string>
+    <string name="fragment_initial_string_q">q</string>
+    <string name="fragment_initial_string_x">x</string>
+    <string name="fragment_initial_string_zh">zh</string>
+    <string name="fragment_initial_string_ch">ch</string>
+    <string name="fragment_initial_string_sh">sh</string>
+    <string name="fragment_initial_string_r">r</string>
+    <string name="fragment_initial_string_z">z</string>
+    <string name="fragment_initial_string_c">c</string>
+    <string name="fragment_initial_string_s">s</string>
+    <string name="fragment_initial_string_y">y</string>
+    <string name="fragment_initial_string_t">t</string>
+
+    <style name="fragment_initial_string_style">
+        <item name="backgroundColor">@null</item>
+        <item name="background">@null</item>
+        <item name="fontFamily">@font/righteous</item>
+        <item name="android:textColor">@color/charcoal_gray</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <!--Fragment Simple-->
+    <string name="fragment_simple_string_a">a</string>
+    <string name="fragment_simple_string_e">e</string>
+    <string name="fragment_simple_string_i">i</string>
+    <string name="fragment_simple_string_o">o</string>
+    <string name="fragment_simple_string_u">u</string>
+    <string name="fragment_simple_string_ü">ü</string>
+
+    <!--Fragment Compound-->
+    <string name="fragment_compound_string_ai">ai</string>
+    <string name="fragment_compound_string_ei">ei</string>
+    <string name="fragment_compound_string_ou">ou</string>
+    <string name="fragment_compound_string_an">an</string>
+    <string name="fragment_compound_string_en">en</string>
+    <string name="fragment_compound_string_in">in</string>
+    <string name="fragment_compound_string_un">un</string>
+    <string name="fragment_compound_string_ün">ün</string>
+    <string name="fragment_compound_string_iang">iang</string>
+    <string name="fragment_compound_string_eng">eng</string>
 </resources>
