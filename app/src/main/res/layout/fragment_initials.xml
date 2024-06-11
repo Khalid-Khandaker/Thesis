@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fragment_initials_constraintlayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,7 +24,7 @@
     </TextView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/fragment_initials_cardview_b"
+        android:id="@+id/fragment_initial_cardview_b"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
 
         android:layout_marginTop="150dp">
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/a"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
@@ -51,6 +53,7 @@
             android:layout_marginBottom="4dp">
 
             <TextView
+                android:id="@+id/b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -82,7 +85,7 @@
         android:outlineSpotShadowColor="@color/lavender_indigo"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fragment_initials_cardview_b"
+        app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_b"
         app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_m"
 
         android:layout_marginTop="150dp">
@@ -219,7 +222,7 @@
         android:outlineAmbientShadowColor="@color/lavender_indigo"
         android:outlineSpotShadowColor="@color/lavender_indigo"
 
-        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_b"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_i"
 
@@ -265,7 +268,7 @@
         android:outlineAmbientShadowColor="@color/lavender_indigo"
         android:outlineSpotShadowColor="@color/lavender_indigo"
 
-        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_b"
         app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_d"
         app:layout_constraintEnd_toStartOf="@+id/fragment_initial_cardview_g"
 
@@ -311,7 +314,7 @@
         android:outlineAmbientShadowColor="@color/lavender_indigo"
         android:outlineSpotShadowColor="@color/lavender_indigo"
 
-        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_b"
         app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_i"
         app:layout_constraintEnd_toStartOf="@id/fragment_initial_cardview_k"
 
@@ -357,7 +360,7 @@
         android:outlineAmbientShadowColor="@color/lavender_indigo"
         android:outlineSpotShadowColor="@color/lavender_indigo"
 
-        app:layout_constraintTop_toBottomOf="@id/fragment_initials_cardview_b"
+        app:layout_constraintTop_toBottomOf="@id/fragment_initial_cardview_b"
         app:layout_constraintStart_toEndOf="@+id/fragment_initial_cardview_g"
         app:layout_constraintEnd_toEndOf="parent"
 

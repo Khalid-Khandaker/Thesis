@@ -228,7 +228,7 @@
     <string name="fragment_compound_string_eng">eng</string>
 
     <string name="fragment_compound_string_swipe">&#60;&#32;&#32;&#32;&#32;swipe&#32;&#32;&#32;&#32;&#62;</string>
-    
+
     <style name="fragment_compound_string_style_swipe">
         <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:color">@color/soft_peach</item>
@@ -243,5 +243,33 @@
         <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--Alert Dialog-->
+    <string name="characters_dialog_box_string_question">What do you want to know about this character?</string>
+    <string name="characters_dialog_box_string_pronunciation_how">I want to know its pronunciation</string>
+    <string name="characters_dialog_box_string_details">I want to know its details</string>
+    <string name="characters_dialog_box_string_cancel">Cancel</string>
+
+    <style name="characters_dialog_box_string_style_question">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/lotion</item>
+    </style>
+
+    <string name="characters_dialog_description_string">The \'ian\' final sounds somewhat like the English word "yen". To pronounce it, start with the \'i\' sound as in "see", add a nasal quality as in "singer", and end with the \'an\' sound as in "can".</string>
+
+    <style name="characters_dialog_description_string_style">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <string name="characters_dialog_description_string_exit">Click outside to exit</string>
+
+    <style name="characters_dialog_description_string_style_exit">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="color">@color/soft_peach</item>
     </style>
 </resources>

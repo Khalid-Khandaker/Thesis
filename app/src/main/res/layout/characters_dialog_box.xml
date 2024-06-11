@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/characters_dialog_box_layout_background"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/characters_dialog_box_card_view_question"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="6dp"
+        android:background="@null"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/characters_card_layout_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/characters_dialog_box_string_question"
+                style="@style/characters_dialog_box_string_style_question"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/characters_dialog_box_button_pronunciation"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/characters_dialog_box_string_pronunciation_how"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/lotion"
+        android:textSize="14sp"
+
+        android:backgroundTint="@color/zaffre"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characters_dialog_box_card_view_question"
+
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="30dp">
+    </Button>
+
+    <Button
+        android:id="@+id/characters_dialog_box_button_details"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/characters_dialog_box_string_details"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/lotion"
+        android:textSize="14sp"
+
+        android:backgroundTint="@color/zaffre"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characters_dialog_box_button_pronunciation"
+        app:layout_constraintBottom_toTopOf="@+id/characters_dialog_button_cancel"
+
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="55dp">
+    </Button>
+
+    <Button
+        android:id="@+id/characters_dialog_button_cancel"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/characters_dialog_box_string_cancel"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/lotion"
+        android:textSize="14sp"
+
+        android:backgroundTint="@color/red"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characters_dialog_box_button_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginTop="15dp">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.apple;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -18,6 +19,4 @@ public class DashboardFragment extends Fragment {
 
         return inflater.inflate(R.layout.fragment_dashboard, container, false);
     }
-
-
 }

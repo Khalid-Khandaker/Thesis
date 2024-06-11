@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore firebaseFirestore;
-    String userID;
+    String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,32 +87,34 @@ public class LoginActivity extends AppCompatActivity {
                             if(task.isSuccessful()) {
                                 Toast.makeText(LoginActivity.this, "Hello student " + username, Toast.LENGTH_SHORT).show();
 
-                                userID = firebaseAuth.getCurrentUser().getUid();
-                                DocumentReference documentReference = firebaseFirestore.collection("Users").document("userID");
-                                Map<String, Object> user = new HashMap<>();
-                                user.put("username", username);
-                                user.put("password", password);
+                                userId = firebaseAuth.getCurrentUser().getUid();
+                                DocumentReference documentReference = firebaseFirestore.collection("Users").document(userId); // Use userId instead of "userId"
+                                Map<String, Object> userMap = new HashMap<>();
+                                userMap.put("username", username);
+                                userMap.put("password", password);
 
-                                firebaseFirestore.collection("Users").add("user").addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                documentReference.set(userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
-                                    public void onSuccess(DocumentReference documentReference) {
-                                        //Log
+                                    public void onSuccess(Void aVoid) {
+                                        Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
+                                        startActivity(new Intent(getApplicationContext(), MainMenuActivity.class));
+                                        finish();
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                        //Log
+                                        Log.w("TAG", "Error adding document", e);
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                 });
-                                startActivity(new Intent(getApplicationContext(), MainMenuActivity.class));
-                                finish();
-                                progressBar.setVisibility(View.GONE);
                             } else {
                                 Toast.makeText(LoginActivity.this, "Oops! Account not found" /*+ Objects.requireNonNull(task.getException()).getMessage()*/,Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
                             }
                         }
                     });
+
                 }
             }
         });
